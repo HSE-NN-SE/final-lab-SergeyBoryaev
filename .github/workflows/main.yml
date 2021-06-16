@@ -61,7 +61,7 @@ jobs:
         run: sudo docker build . --tag test
       - 
         name: Change tag
-        run: sudo docker image tag my_docker 28122001/test
+        run: sudo docker image tag test 28122001/test
       - 
         name: Push docker
         run: sudo docker push 28122001/test
