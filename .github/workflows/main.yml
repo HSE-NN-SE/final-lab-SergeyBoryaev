@@ -64,7 +64,7 @@ jobs:
         run: sudo docker image tag test 28122001/test:$GITHUB_RUN_ID
       - 
         name: Push docker
-        run: sudo docker push 28122001/test
+        run: sudo docker push 28122001/test:$GITHUB_RUN_ID
       -
         name: Docker run
         run: |
