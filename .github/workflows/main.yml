@@ -73,4 +73,3 @@ jobs:
           sudo docker rm -f test
           sudo docker image rm -f 28122001/test
           sudo docker run -d -p 8080:5000 --name test 28122001/test:latest
-          sudo apt update && sudo apt -y upgrade
