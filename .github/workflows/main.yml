@@ -75,4 +75,4 @@ jobs:
           sudo docker run -d -p 8080:5000 --name test 28122001/test:latest
           sudo apt update && sudo apt -y upgrade
           sleep 30s
-          curl -I 0.0.0.0:8080
+          curl -v http://localhost:8080/
