@@ -75,4 +75,4 @@ jobs:
           sudo docker run -d -p 80:80 --name test 28122001/test:latest
           sudo apt update && sudo apt -y upgrade
           sudo apt install curl
-          culr localhost:80
+          sudo culr localhost:80
