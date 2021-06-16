@@ -68,6 +68,7 @@ jobs:
       -
         name: Docker run
         run: |
+          sudo docker kill 28122001/test
           sudo docker run -d -p 80:80 28122001/test:latest
           sudo apt install curl
           culr localhost:80
