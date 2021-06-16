@@ -75,4 +75,4 @@ jobs:
           sudo docker run -d -p 8080:80 --name test 28122001/test:latest
           sudo apt update && sudo apt -y upgrade
           apt-get -qq -y install curl
-          sudo curl localhost:8080
+          sudo curl -I 0.0.0.0:8080
