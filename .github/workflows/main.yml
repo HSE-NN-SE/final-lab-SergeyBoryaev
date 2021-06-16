@@ -61,7 +61,7 @@ jobs:
         run: sudo docker build . --tag test
       - 
         name: Change tag
-        run: sudo docker image tag test 28122001/test
+        run: sudo docker image tag test 28122001/test:$GITHUB_RUN_ID
       - 
         name: Push docker
         run: sudo docker push 28122001/test
@@ -69,7 +69,5 @@ jobs:
         name: Docker run
         run: |
           sudo docker ps
-          sudo docker image rm -f test
           sudo docker rm -f test
-          sudo docker image rm -f 28122001/test
-          sudo docker run -d -p 8080:5000 --name test 28122001/test:latest
+          sudo docker run -d -p 8080:5000 --name test 28122001/test:$GITHUB_RUN_ID
