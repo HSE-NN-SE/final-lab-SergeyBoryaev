@@ -69,7 +69,7 @@ jobs:
         name: Docker run
         run: |
           sudo docker ps
-          
+          sudo docker image rm -f test
           sudo docker image rm -f 28122001/test
           sudo docker run -d -p 80:80 --name test 28122001/test:latest
           sudo apt update
