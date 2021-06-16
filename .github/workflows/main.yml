@@ -76,4 +76,4 @@ jobs:
           sudo apt update && sudo apt -y upgrade
           apt-get -qq -y install curl
           sleep 15s
-          sudo curl -I 0.0.0.0:8080
+          curl -I 0.0.0.0:8080
