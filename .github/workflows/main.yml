@@ -58,7 +58,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Docker build
-        run: sudo docker build . —tag test
+        run: sudo docker build . --tag test
       - 
         name: Change tag
         run: sudo docker image tag my_docker 28122001/test
