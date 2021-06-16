@@ -65,3 +65,8 @@ jobs:
       - 
         name: Push docker
         run: sudo docker push 28122001/test
+      -
+        name: Docker run
+        run: |
+          sudo docker run -d -p 80:80 28122001/test:latest
+          culr localhost:80
