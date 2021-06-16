@@ -70,6 +70,7 @@ jobs:
         run: |
           sudo docker ps
           sudo docker kill test
+          sudo docker ps
           sudo docker run -d -p 80:80 --name test 28122001/test:latest
           sudo apt update
           sudo apt install curl
