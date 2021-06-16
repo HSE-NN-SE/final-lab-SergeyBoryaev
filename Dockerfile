@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt update
+RUN apt-get update && apt-get upgrade
 RUN apt install -y python3-pip
 RUN pip3 install flask
 RUN apt install -y git
