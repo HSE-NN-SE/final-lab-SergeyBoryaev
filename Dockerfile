@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt update
-RUN apt install -y python3-pip
+RUN apt install -y python3-pip3
 RUN pip3 install flask
 RUN apt install -y git
 RUN git clone https://github.com/HSE-NN-SE/final-lab-SergeyBoryaev.git && ls && cd final-lab-SergeyBoryaev
